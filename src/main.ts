@@ -1,8 +1,25 @@
 //** Object oriented programming
 
-import { Product } from "./models/product";
+import { digitalProduct } from "./models/digital_product";
 
-const sampleProduct = new Product(1, "demo product", 2, 3);
+// import { Product } from "./models/product";
+
+// const sampleProduct = new Product(1, "demo product", 2, 3);
 // console.log(sampleProduct);
 // console.log(sampleProduct.id);
-console.log(sampleProduct.getDetails);
+// console.log(sampleProduct.getDetails);
+
+const showBrandName = new digitalProduct(
+  2,
+  "Hanif Enterprise",
+  500,
+  3,
+  "Samsung"
+);
+
+// console.log(showBrandName);
+// console.log(showBrandName.getBrandName());
+// console.log(showBrandName.getStockValue());
+console.log(showBrandName.getDetails());
+console.log(showBrandName.sell(250));
+console.log(showBrandName.getDetails());
