@@ -1,6 +1,7 @@
 //** Object oriented programming
 
 import { digitalProduct } from "./models/digital_product";
+import { PhysicalProduct } from "./models/PhysicalProduct";
 
 // import { Product } from "./models/product";
 
@@ -16,6 +17,8 @@ const showBrandName = new digitalProduct(
   3,
   "Samsung"
 );
+
+const showBrandProduct = new PhysicalProduct(2, "Hanif Enterprise", 500, 3);
 
 // console.log(showBrandName);
 // console.log(showBrandName.getBrandName());
